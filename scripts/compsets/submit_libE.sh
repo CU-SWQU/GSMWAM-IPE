@@ -4,17 +4,6 @@
 # Prepares libE jobcard with job submission details plundered from cheyenne.config and config/cheyenne.config.  
 # Presently setup for wamStandalone 
 
-# Total nodes for parallel forecast members (1 node is needed for libE manager). 
-libE_nodes=3 
-# Total wallclock time for entire ensemble
-libE_wallclock=00:20:00
-# Number of libE workers (If one simulation runs per node, n_workers = libE_nodes -1)
-n_workers=2
-# Number of ensemble members/simulations (typically a multple of workers)
-n_sim=4
-
-export JOBNAME=libE_test11
-
 ## Check WAM configuration
 pwd=$(pwd)
 bn=$(basename $1)
@@ -26,8 +15,6 @@ if [[ $cycle == 1 ]] ; then
 else
   export RESTART=.true.
 fi
-
-export libE_JOBNAME=$JOBNAME 
 
 ## Save environment prior to configuration - we don't want exported variables to interfer with member configurations
 blacklisted () {
@@ -58,12 +45,11 @@ export STORAGE=$PWD
 env_save
 
 ## source config
-CONFIG=$( echo $bn | cut -d'.' -f 1 )
 . $pwd/config/workflow.sh $1
-
 if [ $? != 0 ]; then echo "setup failed, exit"; exit; fi
 
 NODES=$libE_nodes
+
 ## PBS stuff
 SCHEDULER_SUB=${SCHEDULER_SUB:-'qsub'}
 SCHEDULER=${SCHEDULER:-'#PBS'}
@@ -124,7 +110,7 @@ cat >> $tmp << EOF
 rm -rf $RUNDIR
 mkdir -p $RUNDIR
 
-python libE_calling_func.py $n_workers $n_sim
+libE_JOBNAME=$libE_JOBNAME python libE_calling_func.py $n_workers $n_sim
 EOF
 
 cat >> $tmp << 'EOF'
