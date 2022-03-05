@@ -1,0 +1,5 @@
+.sh
+ensemble.log
+libE_mem_config/**
+libE_stats.txt
+node_list
