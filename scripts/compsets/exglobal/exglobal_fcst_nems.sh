@@ -1173,6 +1173,7 @@ if [ $IDEA = .true. ]; then
 
   elif [ $INPUT_PARAMETERS = indir ] ; then
     cp $COMOUT/wam_input_f107_kp.txt $DATA/.
+    cp $COMOUT/input_parameters.nc $DATA/.
     #F107_KP_SKIP_SIZE=$((($FHINI+24)*60))
 
   else
