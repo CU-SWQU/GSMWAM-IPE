@@ -37,6 +37,7 @@ import_fields::
 #
 #  <import_field_name>    [<output_variable_name>]
 output_fields::
+    electron_density
 ::
 
 #
