@@ -1,6 +1,6 @@
 [submodule "WAM"]
 	path = WAM
-	url = https://github.com/NOAA-SWPC/WAM.git
+	url = https://github.com/CU-SWQU/WAM.git
 [submodule "IPE"]
 	path = IPE
 	url = https://github.com/NOAA-SWPC/IPE.git
