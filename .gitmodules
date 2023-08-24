@@ -1,10 +1,10 @@
 [submodule "WAM"]
   path = WAM
-  url = https://github.com/NOAA-SWPC/WAM.git
+  url = https://github.com/CU-SWQU/WAM.git
   branch = develop
 [submodule "IPE"]
   path = IPE
-  url = https://github.com/NOAA-SWPC/IPE.git
+  url = https://github.com/CU-SWQU/IPE.git
   branch = develop
 [submodule "NEMS"]
   path = NEMS
