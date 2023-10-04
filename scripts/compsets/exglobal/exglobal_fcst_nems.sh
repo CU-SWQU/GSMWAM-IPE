@@ -398,11 +398,6 @@ if [[ $VERBOSE = YES ]] ; then
   set -x
 fi
 #
-module purge	
-module use -a $BASEDIR/modulefiles/$BUILD_TARGET	
-module load wam-ipe	
-module list
-
 export COMPLIANCECHECK=${COMPLIANCECHECK:-OFF}
 export ESMF_RUNTIME_COMPLIANCECHECK=$COMPLIANCECHECK:depth=4
 #
@@ -1353,6 +1348,7 @@ if [[ $NEMS = .true. ]] ; then
   fi
 fi # NEMS
 
+module list
 eval $FCSTENV $PGM $REDOUT$PGMOUT $REDERR$PGMERR
 
 export ERR=$?
