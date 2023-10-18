@@ -1,17 +1,20 @@
 [submodule "WAM"]
-	path = WAM
-	url = https://github.com/CU-SWQU/WAM.git
+  path = WAM
+  url = https://github.com/CU-SWQU/WAM.git
+  branch = develop
 [submodule "IPE"]
-	path = IPE
-	url = https://github.com/NOAA-SWPC/IPE.git
+  path = IPE
+  url = https://github.com/CU-SWQU/IPE.git
+  branch = develop
 [submodule "NEMS"]
-	path = NEMS
-	url = https://github.com/NOAA-SWPC/NEMS.git
-	branch = develop
+  path = NEMS
+  url = https://github.com/NOAA-SWPC/NEMS.git
+  branch = develop
 [submodule "SWIO"]
-	path = SWIO
-	url = https://github.com/NOAA-SWPC/SWIO.git
-	branch = master
+  path = SWIO
+  url = https://github.com/NOAA-SWPC/SWIO.git
+  branch = develop
 [submodule "DATAPOLL"]
-	path = DATAPOLL
-	url = https://github.com/NOAA-SWPC/DATAPOLL.git
+  path = DATAPOLL
+  url = https://github.com/NOAA-SWPC/DATAPOLL.git
+  branch = master
