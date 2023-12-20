@@ -1,19 +1,19 @@
 [submodule "WAM"]
   path = WAM
-  url = https://github.com/NOAA-SWPC/WAM.git
+  url = https://github.com/CU-SWQU/WAM.git
   branch = develop
 [submodule "IPE"]
-	path = IPE
+  path = IPE
   #url = https://github.com/NOAA-SWPC/IPE.git
-	url = https://github.com/BrianCurtis-NOAA/IPE.git
+  url = https://github.com/BrianCurtis-NOAA/IPE.git
   branch = highres1
   #branch = develop
 [submodule "NEMS"]
-	path = NEMS
+  path = NEMS
   #url = https://github.com/NOAA-SWPC/NEMS.git
-	url = https://github.com/BrianCurtis-NOAA/NEMS.git
+  url = https://github.com/BrianCurtis-NOAA/NEMS.git
   #branch = develop
-	branch = highres1
+  branch = highres1
 [submodule "SWIO"]
   path = SWIO
   url = https://github.com/NOAA-SWPC/SWIO.git
