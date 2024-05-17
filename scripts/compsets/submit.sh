@@ -91,7 +91,7 @@ mkdir -p $RUNDIR
 cd $RUNDIR
 
 export VERBOSE=YES
-
+export cycle=$cycle
  . $EXGLOBALFCSTSH
 if [ $? != 0 ]; then echo "forecast failed, exit"; exit; fi
 echo "fcst done"
