@@ -1343,18 +1343,6 @@ if [[ $NEMS = .true. ]] ; then
   fi
 fi # NEMS
 
-ln -f -s /scratch1/NCEPDEV/swpc/Astrid.Maute/source_code_hres_houjon/wanjhj_IPE_Fix/dwm07b104i.dat .
-ln -f -s /scratch1/NCEPDEV/swpc/Astrid.Maute/source_code_hres_houjon/wanjhj_IPE_Fix/gd2qd.dat .
-ln -f -s /scratch1/NCEPDEV/swpc/Astrid.Maute/source_code_hres_houjon/wanjhj_IPE_Fix/global_idea_coeff_hflux.dat .
-ln -f -s /scratch1/NCEPDEV/swpc/Astrid.Maute/source_code_hres_houjon/wanjhj_IPE_Fix/global_idea_coeff_lflux.dat .
-ln -f -s /scratch1/NCEPDEV/swpc/Astrid.Maute/source_code_hres_houjon/wanjhj_IPE_Fix/global_idea_wei96.cofcnts .
-ln -f -s /scratch1/NCEPDEV/swpc/Astrid.Maute/source_code_hres_houjon/wanjhj_IPE_Fix/hwm123114.bin .
-ln -f -s /scratch1/NCEPDEV/swpc/Astrid.Maute/source_code_hres_houjon/wanjhj_IPE_Fix/ionprof .
-ln -f -s /scratch1/NCEPDEV/swpc/Astrid.Maute/source_code_hres_houjon/wanjhj_IPE_Fix/IPE_Grid.h5 .
-ln -f -s /scratch1/NCEPDEV/swpc/Astrid.Maute/source_code_hres_houjon/wanjhj_IPE_Fix/IPE_State.apex.201303160000.h5 .
-ln -f -s /scratch1/NCEPDEV/swpc/Astrid.Maute/source_code_hres_houjon/wanjhj_IPE_Fix/tiros_spectra .
-ln -f -s /scratch1/NCEPDEV/swpc/Astrid.Maute/source_code_hres_houjon/wanjhj_IPE_Fix/wei96.cofcnts .
-
 module list
 eval $FCSTENV $PGM $REDOUT$PGMOUT $REDERR$PGMERR
 
